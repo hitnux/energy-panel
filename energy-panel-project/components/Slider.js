@@ -2,12 +2,10 @@
 
 import React, { useEffect, useState } from "react";
 import Slide from "./Slide";
-import Settings from "../settings";
 import Charts from "./Charts";
 
-const SliderSettings = Settings.Slider;
-
-const Slider = () => {
+const Slider = ({ settings }) => {
+  const SliderSettings = settings.Slider;
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
