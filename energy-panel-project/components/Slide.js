@@ -12,6 +12,7 @@ const Slide = ({ slide, current, index, children }) => {
       } else {
         vidRef.current.currentTime = 0;
         vidRef.current.play();
+        vidRef.muted = true;
       }
     }
   }, [vidRef, current]);
