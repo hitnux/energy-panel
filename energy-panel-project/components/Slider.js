@@ -12,7 +12,7 @@ const Slider = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((current + 1) % (SliderSettings.slides.length + 1));
+      setCurrent((current + 1) % SliderSettings.slides.length); //(SliderSettings.slides.length + 1));
     }, SliderSettings.delay || 3000);
     return () => clearInterval(interval);
   }, [current]);
