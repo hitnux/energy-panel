@@ -19,6 +19,7 @@ const Slide = ({ slide, current, index, children }) => {
 
   return (
     <li
+    className="slide"
       style={{
         display: current === index ? "inline-block" : "none",
       }}
